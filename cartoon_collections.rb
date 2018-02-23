@@ -15,9 +15,9 @@ def long_planeteer_calls(calls)
 end
 #
 # WORKING WITHOUT INCLUDE
-def find_the_cheese(yummies)
-  yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
-end
+# def find_the_cheese(yummies)
+#   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+# end
 
 
 def find_the_cheese(recipe) 
