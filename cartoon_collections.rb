@@ -30,3 +30,8 @@ def find_the_cheese(recipe) 
     end
   end
 end
+
+def find_the_cheese(recipe) 
+  cheese_types = ["cheddar", "gouda", "camembert"] 
+  recipe.each {|ingr| cheese_types.include?(ingr) ? return ingr : puts "No cigar"}
+end
