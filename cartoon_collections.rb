@@ -29,6 +29,7 @@ def find_the_cheese(yummies)
   cheese_types.each do|cheese|
     yummies.find(cheese)
   end
+end
 
 
 #NOT WORKING WITH INCLUDE
