@@ -37,7 +37,7 @@ end
 
 def find_the_cheese(recipe) 
   cheese_types = ["cheddar", "gouda", "camembert"] 
-  recipe.each {|ingr| cheese_types.include?(ingr) ? ingr : }
+  recipe.each {|ingr| cheese_types.include?(ingr) ? ingr : puts "No cigar"}
 end
 
 # /usr/local/rvm/gems/ruby-2.3.1/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1954:in `load'
