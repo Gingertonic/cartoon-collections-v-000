@@ -13,25 +13,20 @@ end
 def long_planeteer_calls(calls)
   calls.any? {|call| call.length > 4}
 end
+# 
+# WORKING WITHOUT INCLUDE
+def find_the_cheese(yummies)
+  yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+end
 
-#WORKING WITHOUT INCLUDE
-# def find_the_cheese(yummies)
-#   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+
+# def find_the_cheese(recipe) 
+#   cheese_types = ["cheddar", "gouda", "camembert"] 
+#   recipe.each do |ingr|
+#     if cheese_types.include?(ingr)
+#      return ingr
+#     else
+#      puts "No cigar"
+#     end
+#   end
 # end
-
-
-def find_the_cheese(recipe) 
-  cheese_types = ["cheddar", "gouda", "camembert"] 
-  recipe.each do |ingr|
-    if cheese_types.include?(ingr)
-     return ingr
-    else
-     puts "No cigar"
-    end
-  end
-end
-
-def find_the_cheese2(recipe) 
-  cheese_types = ["cheddar", "gouda", "camembert"] 
-  recipe.each {|ingr| cheese_types.include?(ingr) (? return ingr : puts "No cigar")}
-end
