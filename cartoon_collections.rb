@@ -37,13 +37,13 @@ end
 
 def find_the_cheese(recipe) 
   cheese_types = ["cheddar", "gouda", "camembert"] 
-  recipe.each do |ingr|  
-    if cheese_types.include?(ingr)   
-      return ingr  
-    end 
-  end
-  nil 
+  recipe.each {|ingr| cheese_types.include?(ingr) ? ingr }
 end
+
+/home/Gingertonic/cartoon-collections-v-000/cartoon_collections.rb:39: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  /home/Gingertonic/cartoon-collections-v-000/cartoon_collections.rb:41: syntax error, unexpected tIDENTIFIER, expecting keyword_then or ';' or '\n'
+# /usr/local/rvm/gems/ruby-2.3.1/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1954:in `load'
+# /usr/local/rvm/gems/ruby-2.3.1/gems/rspec-core-3.7.1/lib/rspec/core/
 
 
 #NOT WORKING WITH INCLUDE
