@@ -30,15 +30,15 @@ end
 # end
 
 #WORKING WITHOUT INCLUDE
-def find_the_cheese(yummies)
-  yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
-end
+# def find_the_cheese(yummies)
+#   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+# end
 
 
 def find_the_cheese(recipe) 
   cheese_types = ["cheddar", "gouda", "camembert"] 
   recipe.each do |item|  
-    if cheese_types.include?(item)         
+    if cheese_types.include?(item)   
       return item  
     end 
   end 
