@@ -36,7 +36,8 @@ end
 
 
 def find_the_cheese(yummies)
-  yummies.include?{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  yummies.include?{|ingr| cheese_types.each {|cheese| ingr == cheese}}
 end
 
 
