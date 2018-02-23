@@ -30,5 +30,6 @@ end
 
   def find_the_cheese(yummies)
       cheese_types = ["cheddar", "gouda", "camembert"]
+      binding.pry
       cheese_types.each {|cheese| yummies.include?(cheese)}
   end
