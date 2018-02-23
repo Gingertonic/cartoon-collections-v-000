@@ -26,7 +26,7 @@ end
 # #ALSO NOT WORKING
 def find_the_cheese(yummies)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.map do|cheese|
+  cheese_types.each do|cheese|
     yummies.find(cheese)
   end
 
