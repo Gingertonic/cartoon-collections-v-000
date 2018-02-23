@@ -24,9 +24,13 @@ end
 # end
 #
 # #ALSO NOT WORKING
+# def find_the_cheese(yummies)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   cheese_types.find {|cheese| yummies[i] == cheese }
+# end
+
 def find_the_cheese(yummies)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.find {|cheese| yummies[i] == cheese }
+  yummies.find{|i| yummies[i] == "chedder" || yummies[i] == "gouda" || yummies[i] == "camembert"}
 end
 
 
