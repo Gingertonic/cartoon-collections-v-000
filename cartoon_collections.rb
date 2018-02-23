@@ -48,7 +48,7 @@ end
   def find_the_cheese(yummies)
       cheese_types = ["cheddar", "gouda", "camembert"]
       i = 0
-      # binding.pry
+      binding.pry
       cheese_types.each do|cheese|
         if yummies[i] == cheese
           return yummies[i]
