@@ -29,8 +29,14 @@ end
 #   cheese_types.find {|cheese| yummies[i] == cheese }
 # end
 
+#WORKING WITHOUT INCLUDE
+# def find_the_cheese(yummies)
+#   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+# end
+
+
 def find_the_cheese(yummies)
-  yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+  yummies.include?{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
 end
 
 
