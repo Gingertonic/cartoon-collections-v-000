@@ -17,18 +17,18 @@ end
 #The find_the_cheese method should accept an array of strings.
 #It should then look through these strings to find and return the first string that is a type of cheese.
 #The types of cheese that appear are "cheddar", "gouda", and "camembert".
-#NOT WORKING
+# #NOT WORKING
 # def find_the_cheese(yummies)
 #   cheese_types = ["cheddar", "gouda", "camembert"]
 #   cheese_types. {|cheese| yummies.find(cheese)}
 # end
 #
 # #ALSO NOT WORKING
-# def find_the_cheese(yummies)
-#   cheese_types = ["cheddar", "gouda", "camembert"]
-#   cheese_types.map |cheese|
-#     yummies.find(cheese)
-#   end
+def find_the_cheese(yummies)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_types.map do|cheese|
+    yummies.find(cheese)
+  end
 
 
 #NOT WORKING WITH INCLUDE
@@ -44,16 +44,16 @@ end
   #       end
   #     end
   # end
-
-  def find_the_cheese(yummies)
-      cheese_types = ["cheddar", "gouda", "camembert"]
-      i = 0
-      binding.pry
-      cheese_types.each do|cheese|
-        if yummies[i] == cheese
-          return yummies[i]
-        else
-          i += 1
-        end
-      end
-  end
+  # 
+  # def find_the_cheese(yummies)
+  #     cheese_types = ["cheddar", "gouda", "camembert"]
+  #     i = 0
+  #     binding.pry
+  #     cheese_types.each do|cheese|
+  #       if yummies[i] == cheese
+  #         return yummies[i]
+  #       else
+  #         i += 1
+  #       end
+  #     end
+  # end
