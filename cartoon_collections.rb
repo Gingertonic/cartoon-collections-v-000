@@ -44,7 +44,7 @@ def find_the_cheese(yummies)
   #       end
   #     end
   # end
-  # 
+  #
   # def find_the_cheese(yummies)
   #     cheese_types = ["cheddar", "gouda", "camembert"]
   #     i = 0
