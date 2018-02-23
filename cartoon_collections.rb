@@ -32,7 +32,7 @@ end
 
   def find_the_cheese(yummies)
       cheese_types = ["cheddar", "gouda", "camembert"]
-      i += 0
+      i = 0
       # binding.pry
       cheese_types.map do|cheese|
         if yummies.include?(cheese)
