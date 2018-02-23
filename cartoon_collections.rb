@@ -35,19 +35,13 @@ def find_the_cheese(yummies)
 end
 
 
-def find_the_cheese(yummies)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese == 
-  yummies.include?{|ingr| cheese_types.each {|cheese| ingr == cheese}}
-end
-
-def find_the_cheese(recipe)   
-  cheese_types = ["cheddar", "gouda", "camembert"]   
+def find_the_cheese(recipe) 
+  cheese_types = ["cheddar", "gouda", "camembert"] 
   recipe.each do |item|  
     if cheese_types.include?(item)         
-      return item      
-    end   
-  end   
+      return item  
+    end 
+  end 
   nil 
 end
 
