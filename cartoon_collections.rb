@@ -15,11 +15,11 @@ def long_planeteer_calls(calls)
 end
 #
 # WORKING WITHOUT INCLUDE
-# def find_the_cheese(yummies)
-#   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
-# end
+def find_the_cheese(yummies)
+  yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
+end
 
-
+#WORKING WITH INCLUDE IN TERMINAL BUT NOT PASSING TESTS
 def find_the_cheese(recipe) 
   cheese_types = ["cheddar", "gouda", "camembert"] 
   recipe.each do |ingr|
