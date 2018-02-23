@@ -30,12 +30,27 @@ end
 #     yummies.find(cheese)
 #   end
 
+
+#NOT WORKING WITH INCLUDE
+  # def find_the_cheese(yummies)
+  #     cheese_types = ["cheddar", "gouda", "camembert"]
+  #     i = 0
+  #     # binding.pry
+  #     cheese_types.map do|cheese|
+  #       if yummies.include?(cheese)
+  #         return yummies[i]
+  #       else
+  #         i += 1
+  #       end
+  #     end
+  # end
+
   def find_the_cheese(yummies)
       cheese_types = ["cheddar", "gouda", "camembert"]
       i = 0
       # binding.pry
-      cheese_types.map do|cheese|
-        if yummies.include?(cheese)
+      cheese_types.each do|cheese|
+        if yummies[i] == cheese
           return yummies[i]
         else
           i += 1
