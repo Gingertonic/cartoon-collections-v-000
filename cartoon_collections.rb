@@ -37,10 +37,10 @@ end
 
 def find_the_cheese(recipe) 
   cheese_types = ["cheddar", "gouda", "camembert"] 
-  recipe.each do |ingr| 
-    if cheese_types.include?(ingr) 
-     return ingr 
-   else 
+  recipe.each do |ingr|
+    if cheese_types.include?(ingr)
+     return ingr
+   else
      puts "No cigar"
    end
  end
