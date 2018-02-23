@@ -27,7 +27,6 @@ end
 def find_the_cheese(yummies)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.find {|cheese| yummies[i] == cheese }
-  end
 end
 
 
