@@ -20,7 +20,7 @@ end
 #   cheese_types = ["cheddar", "gouda", "camembert"]
 #   cheese_types. {|cheese| yummies.find(cheese)}
 # end
-# 
+#
 # #ALSO NOT WORKING
 # def find_the_cheese(yummies)
 #   cheese_types = ["cheddar", "gouda", "camembert"]
