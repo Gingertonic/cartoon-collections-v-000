@@ -40,12 +40,12 @@ def find_the_cheese(recipe) 
   recipe.each do |ingr|
     if cheese_types.include?(ingr)
      return ingr
-   else
+    else
      puts "No cigar"
-   end
- end
+    end
+  end
 end
-
+# /us
 
 # /usr/local/rvm/gems/ruby-2.3.1/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1954:in `load'
 # /usr/local/rvm/gems/ruby-2.3.1/gems/rspec-core-3.7.1/lib/rspec/core/
