@@ -34,7 +34,7 @@ end
       cheese_types = ["cheddar", "gouda", "camembert"]
       i += 0
       # binding.pry
-      cheese_types.map do|cheese| 
+      cheese_types.map do|cheese|
         if yummies.include?(cheese)
           return yummies[i]
         else
