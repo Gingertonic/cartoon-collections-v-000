@@ -13,7 +13,7 @@ end
 def long_planeteer_calls(calls)
   calls.any? {|call| call.length > 4}
 end
-# 
+#
 # WORKING WITHOUT INCLUDE
 def find_the_cheese(yummies)
   yummies.find{|ingr| ingr == "cheddar" || ingr == "gouda" || ingr == "camembert"}
