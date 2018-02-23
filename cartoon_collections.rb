@@ -26,8 +26,7 @@ end
 # #ALSO NOT WORKING
 def find_the_cheese(yummies)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each do|cheese|
-    yummies.find(cheese)
+  cheese_types.find {|cheese| yummies[i] == cheese }
   end
 end
 
