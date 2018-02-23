@@ -30,7 +30,7 @@ end
 # end
 
 def find_the_cheese(yummies)
-  yummies.find{|i| yummies[i] == "chedder" || yummies[i] == "gouda" || yummies[i] == "camembert"}
+  yummies.find{|i| i == "chedder" || yummies[i] == "gouda" || yummies[i] == "camembert"}
 end
 
 
